@@ -13,6 +13,7 @@ git branch -D + nome da branch -> Deletar as branchs que você já uniu ao proje
 
 git remote add origin + url do repositório -> Adiciona um repositório do github
 git remote -v -> Verifica todos os repositórios que existem no github
+git push -u origin master -> Leva todos os commits para o repositório em nuvem (github)
 
 -------------------
 Problemas possiveis
