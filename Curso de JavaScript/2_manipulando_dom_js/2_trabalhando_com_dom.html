@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Manipulando arvore DOM</title>
+    </head>
+    <body>
+        <div id='app'>
+            <input type="text" name="nome"/>
+            <button class="botao">Adicionar</button>
+        </div>
+        
+        <script>
+            /*
+            //Document: Função global que referencia a DOM do código
+            //getElementById: busque um elemento com o ID 'nome'
+            //getElementByTagName: busque um elemento com a tag que ele está usando (sempre irá retorno um vetor)
+            //etElementByClassName: busque um elemento com a classe 'nome' (sempre retornara um vetor por não ser unico)
+            var inputElement = document.getElementById('nome')
+            var inputElement = document.getElementsByTagName('input')[0]
+            var inputElement = document.getElementsByClassName('nome')[0]
+            //querySelector: Percorre a arvore DOM inteira possibilitando vocês passar oque você buscar direto no função 
+            //retornando apenas um elemento...... A menos que você passe o querySelectorAll, que permite trazer mais tags iguais dentro da DOM
+            var inputElement = document.querySelector('div#app input')[0]
+            var inputElement = document.querySelector('input[name=nome]')[0]
+                                                                // #: refencia o id da tag
+            console.log(inputElement)
+            */
+
+            var inputElement = document.querySelector('input[name=nome]')
+            var btnElement = document.querySelector('button.botao')
+
+            btnElement.onclick = function(){
+                var text  = inputElement.value
+
+                alert(text)
+            }
+            
+        </script>
+    </body>
+</html> 

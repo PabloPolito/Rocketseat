@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Estruturas condicionais</title>
+    </head>
+    <body>
+        <script>
+            // Estrutura IF
+            function retornaCaneca (cnc) {          
+                if (cnc == 'Branca') {              //Se caneca for igual a branca         
+                    return('Mozinha')               //Retorna "Mozinha"
+                } 
+                else if (cnc == 'Prata') {          //Se for igual a prata 
+                    return('Presente')              //Retorna Presente
+                } 
+                else {                              //Se não
+                    return('Nenhuma')               //Retorna nenhum
+                }
+            }
+
+            var caneca = retornaCaneca('Branca')
+            console.log(caneca)
+
+
+            // Estrutura SWITCH
+            switch (sexo) {
+                case 'Branca':
+                    return('Mozinha')
+                case 'Prata':
+                    return('Presente')
+                default:
+                    return('Nenhuma')
+            }
+
+            var caneca = retornaCaneca('Branca')
+            console.log(caneca)
+        </script>
+    </body>
+</html>

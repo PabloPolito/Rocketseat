@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Manipulando arvore DOM</title>
+    </head>
+    <body>
+        <div id='app'>
+            <input id='nome' />
+        </div>
+        <script>
+            var linkElement = document.createElement('a')                       //Crie um elemento dentro da DOM
+            linkElement.setAttribute('href', 'https://www.uol.com.br/')         //Adiciona um atributo
+            linkElement.setAttribute('title', 'Site da Uol')
+            
+            var textElement = document.createTextNode('Acessar site da Uol')    //Crie um texto dentro da DOM
+            linkElement.appendChild(textElement)                                //Adicione como filho do textElement
+                        
+            var containerElement = document.querySelector('#app')               //Selecione elementos dentro da DOM                        
+            containerElement.appendChild(linkElement)                           //Adicione como um filho dentro do linkElement
+                
+            var inputElement = document.querySelector('#nome')
+            containerElement.removeChild(inputElement)
+        </script>
+    </body>
+</html>

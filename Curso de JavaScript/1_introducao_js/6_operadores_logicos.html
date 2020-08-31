@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso JavaScript</title>
+    </head>
+    <body>
+        <script>
+            // And(e) -> &&
+            // Or(ou) -> ||
+            // Not(n) -> !
+
+            //Função para validar idade e aptidão para entrar na festa
+            function convite(nome, idade) { 
+                if (nome == "Pablo" && idade >= 18){
+                    return "Permitido"
+                }
+                else if (nome != "Pablo" && idade <= 18 ) {
+                    return "Não é permitido"
+                }
+            }
+
+            var resultado = convite("Renan", 19);
+            console.log(resultado);
+
+            //Armazenando valores dentro das variaveis
+            var sexo = "M";
+            var masculino;
+            if (sexo === "M") {
+                masculino = true;
+            }
+            else {
+                masculino = false; 
+            }
+
+            console.log(masculino)
+        </script>
+    </body>
+</html>
