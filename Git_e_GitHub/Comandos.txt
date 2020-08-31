@@ -1,0 +1,15 @@
+Q - Sai
+git init -> Inicia um repositório dentro da pasta atual (.git[itens ocultos])
+git add -> Adiciona o arquivo
+git commit -m -> Sobe para o repositório local, com mensagem
+git status -> Verifica oque está acontecendo, ou oque tem que acontecer
+git log -> Verifica oque aconteceu
+gti show -> Oque foi alterado em determinado ponto da história
+
+git branch -> Verifica as branchs criadas ou Cria uma ramificação no projeto master / se colocar o nome (exemplo, você tem uma landingpage.html e quer adicionar uma feature de um carrinho de compras, para não alterar a landingpage principal, você cria um barnch)
+git checkout -> Acessar a branch
+git merge / passando o nome da branch -> Uni as linhas do tempo (as ramificações na master)
+git branch -D / nome da branch -> Deletar as branchs que você já uniu ao projeto principal
+
+
+
