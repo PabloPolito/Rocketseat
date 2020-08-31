@@ -1,0 +1,38 @@
+<html> 
+    <head>
+        <meta charset='UTF-8'>
+        <title>Exercicio 01</title>
+    </head>
+    <body>
+        <div id='box'></div>
+        <button class='botton'>Clique aqui</button>
+    
+        <script> 
+            
+            var btnElement = document.querySelector('.botton');
+            var mudaCor = document.querySelector('box')
+
+            btnElement.onclick = function newBotton() {
+                var newElement = document.createElement("div");                
+                newElement.style.width = 100;
+                newElement.style.height = 100;
+                newElement.style.backgroundColor = '#8a2be2';          
+                document.getElementBy
+                
+                
+                Id("box").appendChild(newElement);
+            };
+
+            btnElement(newElement).onmouseover = function getRandomColor() {
+                console.log("Entrou")
+                var letters = "0123456789ABCDEF";
+                var color = "#";
+                for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+               }
+               var newColor = getRandomColor(); // #E943F0
+        </script>
+    </body>
+</html>
